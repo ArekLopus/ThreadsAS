@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Web Sockets Test</title>
+    </head>
+    
+    
+    <body>
+        
+        <input id="in" type="text" value="Hi hey Hello"/>
+        <br/><br/> 
+        <button onclick="socket.send(a.value);" >Send</button>
+        
+        
+    </body>
+    <script>
+        var socket = new WebSocket("ws://localhost:8080/ThreadsAS/echo");
+        socket.onmessage = function(event) {
+            alert(event.data);
+        }
+        var a = document.getElementById("in");
+    </script>
+</html>

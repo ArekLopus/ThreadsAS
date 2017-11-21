@@ -1,0 +1,30 @@
+<html lang="en" ng-app="myApp">
+<head>
+
+    <head>
+        <title></title>
+        <meta charset="utf-8">
+        <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/angularjs/1.4.7/angular.js">
+        </script>
+    </head>
+ <body ng-controller="FinanceController">
+Your Salary?
+<input type="text" ng-model="salary">
+<br/>How much should you invest in shopping?
+<input type="text" ng-model="percentage">%
+<br/>The amount to be spent on gadgets will be:<span>{{result() | currency}}</span>
+</body>
+
+<script type="text/javascript">
+    angular.module('myApp', ['myApp.controllers']);
+    angular.module('myApp.controllers', []).controller('FinanceController', function($scope) {
+        $scope.salary = 0;
+        $scope.percentage = 0;
+        $scope.result = function() {
+            return $scope.salary * $scope.percentage * 0.01;
+        };
+    });
+
+</script>
+
+</html>

@@ -1,0 +1,18 @@
+<html lang="en" ng-app>
+<head>
+
+    <head>
+        <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/angularjs/1.4.7/angular.js"></script>
+        <meta charset="utf-8">
+        <title>Two way data binding</title>
+    </head>
+    <body ng-init="name='AngularJS'">
+        <input id="in" type="text" ng-model="name"/>
+        <div><h2>Hello, {{name}}</h2></div>
+    </body>
+    
+    <script type="text/javascript">
+        document.getElementById('in').focus();
+    </script>
+</html>
+

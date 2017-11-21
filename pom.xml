@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <groupId>com.acd</groupId>
+    <artifactId>ThreadsAS</artifactId>
+    <version>1.0.0</version>
+    <packaging>war</packaging>
+    
+    <build>
+        <finalName>ThreadsAS</finalName>
+    </build>
+    
+    <properties>
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+        <maven.compiler.source>1.8</maven.compiler.source>
+        <maven.compiler.target>1.8</maven.compiler.target>
+    </properties>
+
+    <dependencies>
+      <dependency>
+        <groupId>javax</groupId>
+        <artifactId>javaee-api</artifactId>
+        <version>7.0</version>
+        <scope>provided</scope>
+      </dependency>
+      
+      <dependency>
+        <groupId>org.primefaces</groupId>
+        <artifactId>primefaces</artifactId>
+        <version>5.2</version>
+      </dependency>
+      
+      <dependency>
+        <groupId>junit</groupId>
+        <artifactId>junit</artifactId>
+        <version>4.8.1</version>
+        <scope>test</scope>
+      </dependency>
+      
+      <dependency>
+        <groupId>org.databene</groupId>
+        <artifactId>contiperf</artifactId>
+        <version>2.3.4</version>
+        <scope>test</scope>
+      </dependency>
+      
+      
+      
+        <dependency>
+            <groupId>com.airhacks</groupId>
+            <artifactId>porcupine</artifactId>
+            <version>0.0.4</version>
+            <scope>compile</scope>
+        </dependency>
+
+        <dependency>
+            <groupId>com.airhacks</groupId>
+            <artifactId>porcupine-spy</artifactId>
+            <version>0.0.4</version>
+            <scope>compile</scope>
+        </dependency>
+      
+      
+      
+      <dependency><groupId>org.wildfly</groupId>
+        <artifactId>wildfly-ejb-client-bom</artifactId>
+        <version>9.0.0.CR1</version>
+        <type>pom</type>
+        <scope>compile</scope>
+      </dependency>
+      
+      <dependency>
+        <groupId>com.h2database</groupId>
+        <artifactId>h2</artifactId>
+        <version>1.3.176</version>
+    </dependency>
+    
+    <!-- <dependency>
+    <groupId>org.jboss.spec.javax.enterprise.concurrent</groupId>
+    <artifactId>jboss-concurrency-api_1.0_spec</artifactId>
+    <version>1.0.0.Final</version>
+</dependency> -->
+      
+    </dependencies>
+
+
+    
+
+</project>
